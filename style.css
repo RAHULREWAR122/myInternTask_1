@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1d1f21;
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  text-align: center;
+  margin-top: -19px;
+  margin-bottom: 20px;
+  background-color: #4b2e83; /* Violet */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 95%;
+}
+
+.header ul li {
+  position: relative;
+}
+
+.header ul li .menu {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+
+
+.linksList {
+  z-index: 20;
+  min-height: 100%;
+  width: 100vw;
+  position: fixed;
+  backdrop-filter: blur(1px);
+  left: 0px;
+  top: 70px;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+.listShow {
+  z-index: 30;
+  min-height: 100%;
+  width: 60%;
+  max-width: 250px;
+  position: fixed;
+  left: 0px;
+  top: 2px;
+  background: #292c2ed5;
+}
+
+.listShow ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.listShow ul li a {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.listShow ul li a:hover {
+  color: #76a8bd;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+}
+
+.balance {
+  float: right;
+  margin-left: 10px;
+}
+
+.main {
+  min-height: 83vh;
+  margin-top: -20px;
+  padding: 15px;
+}
+
+.section {
+  margin-bottom: 30px;
+  display: none;
+  /* Initially hide all sections */
+}
+
+.matchSection {
+  text-align: center;
+}
+
+.section.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  /* Display active section */
+}
+
+.section-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.match-box {
+  background-color: #292c2e;
+  /* Dark Gray */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  min-width: 60% !important;
+  max-width: 200px;
+}
+
+.match-box a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #4b2e83;
+  padding: 8px 15px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.match-box a:hover {
+  background-color: #5f3ca0;
+}
+
+.team-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.team-details img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 10px;
+}
+
+.countdown {
+  font-size: 16px;
+  color: red;
+}
+
+.toggle-sections {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-sections button {
+  background-color: #4b2e83;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-sections button:hover {
+  background-color: #5f3ca0;
+}
+
+@media screen and (max-width: 600px) {
+  .header ul li {
+    font-size: 0.9rem;
+  }
+
+  .toggle-sections button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .team-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    gap: 2px;
+    font-size: 0.7rem;
+  }
+
+  .team-details img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 0px;
+  }
+}

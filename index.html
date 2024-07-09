@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><img class="menu" src="https://cdn.iconscout.com/icon/free/png-512/free-menu-176-433842.png?f=webp&w=256" alt="menu">
+                <div class="linksList" style="display: none;">
+                    <div class="listShow">
+                        <ul>
+                            <li><a href="/myBalance">My Balance</a></li>
+                            <li><a href="/earnFree">Earn free entry</a></li>
+                            <li><a href="/play">How to play</a></li>
+                            <li><a href="/about">About us</a></li>
+                            <li><a href="/help">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>Fantasy App</li>
+            <li>$300</li>
+        </ul>
+    </header>
+    <div class="main">
+
+        <div class="toggle-sections">
+            <button onclick="toggleCategory('cricket')">Cricket Matches</button>
+            <button onclick="toggleCategory('football')">Football Matches</button>
+        </div>
+
+        <h3 class="matchSection">Cricket Matches</h3>
+
+        <div class="toggle-sections">
+            <button onclick="toggleSection('upcoming')">Upcoming Matches</button>
+            <button onclick="toggleSection('live')">Live Matches</button>
+            <button onclick="toggleSection('finished')">Finished Matches</button>
+        </div>
+        <div class="section upcoming active">
+            <div class="section-header">Upcoming Matches</div>
+            <p>No upcoming matches.</p>
+        </div>
+        <div class="section live">
+            <div class="section-header">Live Matches</div>
+            <p>No live matches currently.</p>
+        </div>
+        <div class="section finished">
+            <div class="section-header">Finished Matches</div>
+            <p>Finished matches fetched.</p>
+            <div class="match-box">
+                <div class="team-details">
+                    <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/120600/120663.jpg"
+                        alt="Argentina"><span>Argentina</span><span> vs
+                    </span><span>Brazil</span><img
+                        src="https://images.icc-cricket.com/image/upload/t_ratio16_9-size40/prd/p9snbe09wjmtgcncwm7n"
+                        alt="Brazil">
+                </div>
+                <p>Match Ended</p>
+                <a href="fantesy/joined_contest.php?match_code=ARGVSBRA">Joined Match</a>
+            </div>
+        </div>
+        <script src="main.js">
+        </script>
+</body>
+
+</html>
+
